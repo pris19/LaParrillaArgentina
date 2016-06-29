@@ -118,7 +118,7 @@ if($_POST){
             <div class="container">
                 <article class="row">
                     <article class="col-xs-12 col-sm-12  col-md-4 col-md-offset-5 col-sm-offset-2">
-                        <button  type="submit" name="reserv" class=" buttons" data-toggle="modal" data-target="#myModal">RESERVAR</button>
+                        <button  type="submit" name="reserv" class="hvr-float-shadow buttons" data-toggle="modal" data-target="#myModal">RESERVAR</button>
                     </article>
                 </article>
             </div>
@@ -126,6 +126,29 @@ if($_POST){
         </form>
         <!-- *********************end form reservation  ********************************** -->
 
+          
+          <!--Notification pop-up for reservation-->
+          <div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Reservación exitosa</h4>
+      </div>
+      <div class="modal-body">
+        <p>Reservación ha sido realizada</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>    
+          
+          
+          
            <script>
             function clearItems() {
                 $("#hour-list").find('option').remove();
